@@ -1,11 +1,11 @@
-# promptlead_jd210
+# slo_blame_chain_segmenter
 
 **把Prompt 工程负责人·SLO 违约的归因链路切成可核查的片段并标出关键位置。**
 
-`promptlead_jd210` —— 把输入按语义边界切成独立单元，逐单元核对Prompt 工程负责人·SLO 违约的归因链路相关的特征并标出命中位置
+`slo_blame_chain_segmenter` —— 把输入按语义边界切成独立单元，逐单元核对Prompt 工程负责人·SLO 违约的归因链路相关的特征并标出命中位置
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`promptlead_jd210.py` 拷走就能用
+- 单文件，`slo_blame_chain_segmenter.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install ricksharan-promptlead_jd210
+pip install ricksharan-slo_blame_chain_segmenter
 ```
 
 装完直接用命令名调用：
 
 ```bash
-promptlead_jd210 --help
+slo_blame_chain_segmenter --help
 ```
 
-也可以不用安装，直接把 `promptlead_jd210.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `slo_blame_chain_segmenter.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ promptlead_jd210 --help
 ## 用法
 
 ```bash
-python promptlead_jd210.py --file input.txt
-python promptlead_jd210.py --text "示例内容"
-python promptlead_jd210.py --file input.txt --json
+python slo_blame_chain_segmenter.py --file input.txt
+python slo_blame_chain_segmenter.py --text "示例内容"
+python slo_blame_chain_segmenter.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python promptlead_jd210.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_promptlead_jd210.py
+python test_slo_blame_chain_segmenter.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_promptlead_jd210.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/ricksharan/promptlead_jd210>
+- GitHub 仓库：<https://github.com/ricksharan/slo_blame_chain_segmenter>
 
 ---
 
@@ -79,7 +79,7 @@ python test_promptlead_jd210.py
 ricksharan 做Prompt 工程负责人·SLO 违约的归因链路相关的问题，方向对标生数科技的专家Prompt 工程负责人岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://ricksharan.github.io>
-- 仓库：<https://github.com/ricksharan/promptlead_jd210>
+- 仓库：<https://github.com/ricksharan/slo_blame_chain_segmenter>
 
 ## 许可
 

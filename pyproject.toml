@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ricksharan-promptlead_jd210"
+name = "ricksharan-slo_blame_chain_segmenter"
 version = "0.1.0"
 description = "把输入按语义边界切成独立单元，逐单元核对Prompt 工程负责人·SLO 违约的归因链路相关的特征并标出命中位置"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://ricksharan.github.io"
-Repository = "https://github.com/ricksharan/promptlead_jd210"
-Issues = "https://github.com/ricksharan/promptlead_jd210/issues"
+Repository = "https://github.com/ricksharan/slo_blame_chain_segmenter"
+Issues = "https://github.com/ricksharan/slo_blame_chain_segmenter/issues"
 
 [project.scripts]
-promptlead_jd210 = "promptlead_jd210:main"
+slo_blame_chain_segmenter = "slo_blame_chain_segmenter:main"
 
 [tool.setuptools]
-py-modules = ["promptlead_jd210"]
+py-modules = ["slo_blame_chain_segmenter"]
